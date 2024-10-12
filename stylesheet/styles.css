@@ -1,0 +1,206 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary : #ff9933; /* Saffron yellow */
+    --secondary: #820000; /* Deep maroon */
+    --accent: #228B22; /* Forest green */
+}
+
+.header-content {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(242,241,246,1) 0%, rgba(228,240,92,1) 0%, rgba(244,251,151,1) 0%, rgba(245,255,115,1) 19%, rgba(241,241,235,1) 100%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.responsive-header {
+    display: none;
+
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+}
+
+.logo {
+    @media only screen and (max-width: 768px){
+        display: none;
+        width: 100%;
+    }
+}
+
+
+header h1 {
+    color: var(--secondary)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(190,212,183,1) 0%, rgba(34,139,34,1) 0%, rgba(115,255,163,1) 0%, rgba(255,255,255,1) 0%, rgba(124,238,162,1) 13%, rgba(23,231,92,1) 24%, rgba(22,232,92,1) 50%, rgba(20,235,91,1) 79%, rgba(15,242,88,1) 100%, rgba(157,236,173,1) 100%, rgba(123,183,125,1) 100%, rgba(255,255,255,1) 100%, rgba(234,249,111,1) 100%, rgba(241,241,235,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: block;
+    text-align: center;
+    width: auto;
+}
+
+nav ul li a:hover  {
+    background-color: #003300; /* Darker green */
+    transition: background-color 0.3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px 40px;
+    }
+}
+
+.parent-content > sectio n{
+    @media only screen and (max-width: 768px) {
+        padding: 0 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > p {
+    padding: 4px 0;
+}
+
+footer > p > i {
+    padding-right: 10px;
+}
+
+.search {
+    position: relative;
+
+    @media only screen and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+
+    @media only screen and (max-width:  768px) {
+        right: 50px;
+    }
+}
+
+.imag-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-swapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 1000px;
+    height: 600px;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
+}
+
+.image-swapper img {
+    max-width: 80%;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Hide my submenus by default */
+.my-menu ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+  
+  /* Position submenus relative to parent list item */
+  .my-menu li {
+    position: relative;
+  }
+  
+  .my-menu li a {
+    padding: 15px 30px;
+  }
+  /* Look, Ma! No onclick handler! */
+  .my-menu li:hover > ul {
+    display: block;
+    min-width: 100%;
+  }
+  
+  /* Modern Browsers only */
+  .my-menu li:focus-within > ul {
+    display: block;
+  }
+
+  .custom-button {
+    background-color: red;
+    border-color: red;
+ }
