@@ -5,8 +5,6 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints (if applicable)](#api-endpoints-if-applicable)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 
@@ -41,6 +39,33 @@ To install the project, follow these steps:
 
 4. **Create the Necessary Tables**:
   - Execute the following SQL queries to set up the database tables:
-   - contact_us
-   - booknow
-   - watchlist
+     - contact_us
+     - booknow
+     - watchlist
+
+## Technologies Used
+
+- **PHP**: Handles server-side functionality, including processing form data and database operations.
+- **HTML5**: Structures the website and web pages.
+- **CSS3**: Adds styling and visual presentation to the pages.
+- **JavaScript**: Manages dynamic front-end interactions, like adding to and removing from the watchlist.
+- **MySQL**: Stores the application's data, such as user inquiries, bookings, and watchlists.
+
+## Contributing
+
+To contribute to this project, follow these steps:
+
+1. **Fork the Repository**:
+   - Fork the project on GitHub to create a copy in your own account.
+
+2. **Create a New Branch**:
+   - Create a new feature branch to isolate your changes:
+     ```bash
+     git checkout -b feature/your-feature-name
+     ```
+
+3. **Make Your Changes**:
+   - Add the necessary features, bug fixes, or improvements to the codebase.
+
+4. **Commit Your Changes**:
+   - Use concise, descriptive commit message
